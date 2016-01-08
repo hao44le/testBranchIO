@@ -19,7 +19,18 @@
 		C0DC11D41C35E43C003F1D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DC11D21C35E43C003F1D29 /* Main.storyboard */; };
 		C0DC11D61C35E43C003F1D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DC11D51C35E43C003F1D29 /* Assets.xcassets */; };
 		C0DC11D91C35E43C003F1D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DC11D71C35E43C003F1D29 /* LaunchScreen.storyboard */; };
+		C0F4175C1C3F519F00097727 /* testBranchIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4175B1C3F519F00097727 /* testBranchIOTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0F4175E1C3F519F00097727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0DC11C31C35E43C003F1D29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0DC11CA1C35E43C003F1D29;
+			remoteInfo = testBranchIO;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08E65A9ADBD993D0E56B540C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -38,6 +49,9 @@
 		C0DC11DA1C35E43C003F1D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0DC11E01C35E517003F1D29 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		C0DC11E11C35ED5D003F1D29 /* testBranchIO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testBranchIO.entitlements; sourceTree = "<group>"; };
+		C0F417591C3F519F00097727 /* testBranchIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testBranchIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F4175B1C3F519F00097727 /* testBranchIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testBranchIOTests.swift; sourceTree = "<group>"; };
+		C0F4175D1C3F519F00097727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D265E6C28560961B2F06088E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +66,13 @@
 				C06E84C51C39F951007BC0F8 /* CoreTelephony.framework in Frameworks */,
 				C06E84C31C39F947007BC0F8 /* AdSupport.framework in Frameworks */,
 				1362AD88543B7F2BF1D54146 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F417561C3F519F00097727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C0DC11CD1C35E43C003F1D29 /* testBranchIO */,
+				C0F4175A1C3F519F00097727 /* testBranchIOTests */,
 				C0DC11CC1C35E43C003F1D29 /* Products */,
 				1AE926FE3BD08FEA9DC2EA7E /* Pods */,
 				0F1D3EDD0B7EFD612C3C7766 /* Frameworks */,
@@ -94,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				C0DC11CB1C35E43C003F1D29 /* testBranchIO.app */,
+				C0F417591C3F519F00097727 /* testBranchIOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +134,15 @@
 				C0DC11DA1C35E43C003F1D29 /* Info.plist */,
 			);
 			path = testBranchIO;
+			sourceTree = "<group>";
+		};
+		C0F4175A1C3F519F00097727 /* testBranchIOTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4175B1C3F519F00097727 /* testBranchIOTests.swift */,
+				C0F4175D1C3F519F00097727 /* Info.plist */,
+			);
+			path = testBranchIOTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +168,24 @@
 			productReference = C0DC11CB1C35E43C003F1D29 /* testBranchIO.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C0F417581C3F519F00097727 /* testBranchIOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F417621C3F51A000097727 /* Build configuration list for PBXNativeTarget "testBranchIOTests" */;
+			buildPhases = (
+				C0F417551C3F519F00097727 /* Sources */,
+				C0F417561C3F519F00097727 /* Frameworks */,
+				C0F417571C3F519F00097727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F4175F1C3F519F00097727 /* PBXTargetDependency */,
+			);
+			name = testBranchIOTests;
+			productName = testBranchIOTests;
+			productReference = C0F417591C3F519F00097727 /* testBranchIOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +205,10 @@
 							};
 						};
 					};
+					C0F417581C3F519F00097727 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C0DC11CA1C35E43C003F1D29;
+					};
 				};
 			};
 			buildConfigurationList = C0DC11C61C35E43C003F1D29 /* Build configuration list for PBXProject "testBranchIO" */;
@@ -171,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				C0DC11CA1C35E43C003F1D29 /* testBranchIO */,
+				C0F417581C3F519F00097727 /* testBranchIOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +239,13 @@
 				C07FDA3B1C3B35DB00B45789 /* testBranchIO.entitlements in Resources */,
 				C0DC11D61C35E43C003F1D29 /* Assets.xcassets in Resources */,
 				C0DC11D41C35E43C003F1D29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F417571C3F519F00097727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +309,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0F417551C3F519F00097727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F4175C1C3F519F00097727 /* testBranchIOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0F4175F1C3F519F00097727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0DC11CA1C35E43C003F1D29 /* testBranchIO */;
+			targetProxy = C0F4175E1C3F519F00097727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0DC11D21C35E43C003F1D29 /* Main.storyboard */ = {
@@ -388,6 +466,30 @@
 			};
 			name = Release;
 		};
+		C0F417601C3F51A000097727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testBranchIOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geleichen.testBranchIOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testBranchIO.app/testBranchIO";
+			};
+			name = Debug;
+		};
+		C0F417611C3F51A000097727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testBranchIOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geleichen.testBranchIOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testBranchIO.app/testBranchIO";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -408,6 +510,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C0F417621C3F51A000097727 /* Build configuration list for PBXNativeTarget "testBranchIOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F417601C3F51A000097727 /* Debug */,
+				C0F417611C3F51A000097727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
